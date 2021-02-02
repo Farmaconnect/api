@@ -31,7 +31,9 @@ Todas las peticiones devuelven una estructura en formato JSON (JavaScript Object
 }
 ```
 
-En los caso que se devuelve una respuesta en Formato String es esclusivamente la relizar la petición del Token de sesión.
+En los casos que se devuelve una respuesta en Formato String, solamente ocurrirá en peticiones con status 200 en los siguientes casos:
+- Obtención del token, devuelve un string con el Token
+- POST, PUT y DELETE; devolverá un string con sintaxis uuid V4
 
 Respuesta (status)                  | Nota                      |
 ------------------------    | ------------------------  |
