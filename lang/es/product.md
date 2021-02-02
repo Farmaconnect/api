@@ -85,7 +85,8 @@ Parametro adicionales que se pueden usar.
 
 Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
-id                          | string                    | Obligatorio             |  |
+id                          | string                    | Obligatorio             | Identificador que se le añadió como referencia |
+info                        | string                    | Opcional                | Si quiere recuperar etiqueta asociadas al producto, solo debere añadir como valor ***tag** |
 
 ## UPDATE
 Cambiar datos de un producto
