@@ -40,7 +40,8 @@ const SETTING =
             category:[],    // array de enteros 
             url:'',         // string
             ean:[]          // array de strings
-        }
+        },
+        category: []        // array de enteros
     }
 }
 
@@ -119,7 +120,8 @@ const SETTING =
             category:[],    // array de enteros 
             url:'',         // string
             ean:[]          // array de strings
-        }
+        },
+        category: []        // array de enteros
     }
 }
 
