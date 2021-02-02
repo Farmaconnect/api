@@ -28,6 +28,15 @@ const REQUEST_TOKEN = async () =>
 }
 
 ```
+## Respuesta
+Si la petición es correcta, esta recibirá la respuesta como el ejemplo siguiente.
+```javascript
+
+{
+    status:200,
+    result: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkZhcm1hY29ubmVjdCBFamVtcGxvIiwiaWF0IjoxNTE2MjM5MDIyfQ.voSErXX9Wl2b0HtUNPk1PG_j7wXkikSHwb4U0wO_Uas'
+}
+```
 
 ## Ejemplo en otros lenguajes
 Lenguage                    | Ejemplo                      |
