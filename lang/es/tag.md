@@ -76,7 +76,7 @@ tag                         | string                    | Obligatorio           
 template                    | int                       | Opcional                | Recuperar diseños asociados al modelo de etiqueta|
 flash                       | int (0,1)                 | Opcional                | Lanzar evento flash |
 
-## UPDATE
+## PUT
 Cambiar el diseño, el producto o ambos
 ```javascript
 const TOKEN = {token};
@@ -85,7 +85,7 @@ const URL = 'https://rest.farmaconnect.es/tag/';
 
 const SETTING =
 {
-    method: 'UPDATE', 
+    method: 'PUT', 
     mode: 'cors', 
     cache: 'no-cache',
     headers: 
