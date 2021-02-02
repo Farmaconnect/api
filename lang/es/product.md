@@ -88,7 +88,7 @@ Parametro de consulta       | Tipo de dato              |  Uso                  
 id                          | string                    | Obligatorio             | Identificador que se le añadió como referencia |
 info                        | string                    | Opcional                | Si quiere recuperar etiquetas asociadas al producto, solo deberá añadir como valor ***tag*** al atributo ***info*** |
 
-## UPDATE
+## PUT
 Cambiar datos de un producto
 ```javascript
 const TOKEN = {token};
@@ -97,7 +97,7 @@ const URL = 'https://rest.farmaconnect.es/product/';
 
 const SETTING =
 {
-    method: 'UPDATE', 
+    method: 'PUT', 
     mode: 'cors', 
     cache: 'no-cache',
     headers: 
