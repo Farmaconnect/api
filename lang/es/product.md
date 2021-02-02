@@ -110,17 +110,12 @@ const SETTING =
         id:'Ad-74174',
         attrs:
         {
-            description:'', // string
+            name:'', // string
             pvp:0.00,       // float, decimal, int
             pvp_aux:0.00,   // float, decimal, int
-            pvp_unit:0.00,  // float, decimal, int
-            supplier: 0,    // int
+            supplier: '',    // string
             stock:0,        // int
-            size:0,         // int
-            size_unit:'ml', // string
-            category:[],    // array de enteros 
             url:'',         // string
-            ean:[]          // array de strings
         },
         category: []        // array de enteros
     }
