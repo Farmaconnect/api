@@ -21,9 +21,19 @@ Para usar los servicios simplemente se añade la url + el enpoint.
 `Ejemplo: https//rest.farmaconnect.es/tag`
 
 ## Gestión de respuestas HTTP
-Todos los servicio utilizado recibirán una respuesta en formato JSON.
+Todas las peticiones devuelven una estructura en formato JSON (JavaScript Object Notation), con la siguiente estructura.
 
-Respuesta                   | Nota                      |
+```javascript
+{
+    status:200,
+    error:null,
+    result: {data} // String o Array de objectos
+}
+```
+
+En los caso que se devuelve una respuesta en Formato String es esclusivamente la relizar la petición del Token de sesión.
+
+Respuesta (status)                  | Nota                      |
 ------------------------    | ------------------------  |
 200 | La petición se efectuó correctamente|
 400 | No se ha podido finalizar la petición |
