@@ -73,7 +73,7 @@ Parametro de consulta       | Tipo de dato              |  Uso                  
 ------------------------    | ------------------------  |------------------------ |------------------------         |
 id                          | string                    | Obligatorio             |  |
 
-## UPDATE
+## PUT
 Cambiar productos asociados a la categoria
 ```javascript
 const TOKEN = {token};
@@ -82,7 +82,7 @@ const URL = 'https://rest.farmaconnect.es/storehouse/';
 
 const SETTING =
 {
-    method: 'UPDATE', 
+    method: 'PUT', 
     mode: 'cors', 
     cache: 'no-cache',
     headers: 
