@@ -1,3 +1,7 @@
+![Image of Yaktocat](/img/logo-dark.png)
+
+
+
 # API Rest Farmaconnect
 Descripción del uso de la API Rest de Farmaconnect
 
