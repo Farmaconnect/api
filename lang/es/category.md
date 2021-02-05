@@ -27,7 +27,7 @@ const SETTING =
     body : 
     {
         id:'Listado principal', // string
-        articles: []            // array de enteros
+        articles: []            // array de string
     }
 }
 
@@ -71,7 +71,8 @@ Parametro adicionales que se pueden usar.
 
 Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
-id                          | string                    | Obligatorio             |  |
+id                          | string                    | Opcional             |  |
+list                         | string                    | Opcional (1)           |  Recuperar todas las categorias |
 
 ## PUT
 Cambiar productos asociados a la categoria
@@ -93,8 +94,8 @@ const SETTING =
     body : 
     {
         id:'Listado principal', // string
-        add:[],                 // array de enteros, Añadir a la lista actual
-        del:[]                  // array de enteros, Eliminar a la lista actual
+        add:[],                 // array de string, Añadir a la lista actual
+        del:[]                  // array de string, Eliminar a la lista actual
     }
 }
 
