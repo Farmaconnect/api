@@ -71,7 +71,7 @@ Parametro adicionales que se pueden usar.
 
 Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
-id                          | string                    | Obligatorio             |  |
+list                          | string                    | Obligatorio  (1)           | Recuperar todos los almacenes  |
 
 ## PUT
 Cambiar productos asociados a la categoria
