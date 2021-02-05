@@ -36,12 +36,11 @@ const SETTING =
             supplier: 0,    // int
             stock:0,        // int
             size:0,         // int
-            size_unit:'ml', // string
-            category:[],    // array de enteros 
+            size_unit:'ml', // strin
             url:'',         // string
             ean:[]          // array de strings
         },
-        category: []        // array de enteros
+        category: []        // array de string
     }
 }
 
@@ -86,7 +85,9 @@ Parametro adicionales que se pueden usar.
 Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
 id                          | string                    | Obligatorio             | Identificador que se le añadió como referencia |
-info                        | string                    | Opcional                | Si quiere recuperar etiquetas asociadas al producto, solo deberá añadir como valor ***tag*** al atributo ***info*** |
+category                    | string                    | Opcional ( product )    | Recuperar categorias asociandas al producto |
+info                        | string                    | Opcional ( tag )        | Si quiere recuperar etiquetas asociadas al producto, solo deberá 
+añadir como valor ***tag*** al atributo ***info*** |
 
 ## PUT
 Cambiar datos de un producto
@@ -117,7 +118,7 @@ const SETTING =
             stock:0,        // int
             url:'',         // string
         },
-        category: []        // array de enteros
+        category: []        // array de string
     }
 }
 
