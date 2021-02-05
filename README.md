@@ -44,3 +44,9 @@ Respuesta (status)                  | Nota                      |
 
 ` `
 > *Recomendaciones*: En el caso de que se produzca un error 500 o 400, se recomienda que tenga implementado un gestor de cache evento, para poder reenviar más tarde la petición.
+
+## Pruebas de peticiones HTTP
+En cualquier momento puede realizar pruebas de petición http. A continuación dejamos disponible como realizar dichas peticiones con postman.
+
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/e786fe99b60ba75b87a8)
