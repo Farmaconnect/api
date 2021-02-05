@@ -72,7 +72,7 @@ Parametro adicionales que se pueden usar.
 
 Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
-tag                         | string                    | Obligatorio             |  |
+tag                         | string                    | Obligatorio             | Id de la etiqueta |
 template                    | int                       | Opcional                | Recuperar diseños asociados al modelo de etiqueta|
 flash                       | int (0,1)                 | Opcional                | Lanzar evento flash |
 
@@ -109,7 +109,7 @@ const REQUEST = async () =>
 }
 ```
 ## DELETE 
-Quitar un asignació.
+Quitar un asignación.
 ```javascript
 const TOKEN = {token};
 
