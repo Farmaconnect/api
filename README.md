@@ -19,6 +19,7 @@ tag                         | [Métodos HTTP - Etiquetas](/lang/es/tag.md)      
 product                     | [Métodos HTTP - Articulos](/lang/es/product.md)           |
 category                    | [Métodos HTTP - Categoria de productos ](/lang/es/category.md)  |
 storehouse                  | [Métodos HTTP - Almacenes](/lang/es/storehouse.md)        |
+info                        | [Métodos HTTP - Información](/lang/es/info.md)        |
 
 Para usar los servicios simplemente se añade la url + el enpoint.
 
