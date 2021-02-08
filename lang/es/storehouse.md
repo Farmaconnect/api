@@ -1,10 +1,10 @@
 [Atras](/README.md) 
 
 # Métodos HTTP - Almacenes
-A continuación se mostrará como usar las peticiones API REST.
+A continuación se mostrará como usar las peticiones API REST para la obtención de información acerca de sus almacenes.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriorment.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
 
 ## POST
 Añadir una etiqueta a un almacén
@@ -39,7 +39,7 @@ const REQUEST = async () =>
 }
 ```
 ## GET
-Recuperar información de una categoria
+Recuperar información de un almacén
 
 ```javascript
 const TOKEN = {token};
@@ -67,14 +67,14 @@ const REQUEST = async () =>
 
 ```
 
-Parametro adicionales que se pueden usar.
+Parámetros adicionales que se pueden usar.
 
-Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
+Parámetro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
 list                          | string                    | Obligatorio  (1)           | Recuperar todos los almacenes  |
 
 ## PUT
-Cambiar productos asociados a la categoria
+Cambiar etiquetas asociadas al almacén
 ```javascript
 const TOKEN = {token};
 
@@ -106,7 +106,7 @@ const REQUEST = async () =>
 }
 ```
 ## DELETE 
-Quitar una categoria
+Quitar un almacén
 ```javascript
 const TOKEN = {token};
 

@@ -1,13 +1,13 @@
 [Atras](/README.md) 
 
 # Métodos HTTP - Categoria de productos
-A continuación se mostrará como usar las peticiones API REST.
+A continuación se mostrará como usar las peticiones API REST para la obtención de las categorías de productos.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriorment.
+En todas las peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
 
 ## POST
-Añadir un productos a una categoria
+Añadir un producto a una categoria
 
 ```javascript
 const TOKEN = {token};
@@ -39,7 +39,7 @@ const REQUEST = async () =>
 }
 ```
 ## GET
-Recuperar información de una categoria
+Recuperar información de una categoría
 
 ```javascript
 const TOKEN = {token};
@@ -67,15 +67,15 @@ const REQUEST = async () =>
 
 ```
 
-Parametro adicionales que se pueden usar.
+Parámetro adicionales que se pueden usar.
 
-Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
+Parámetro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
 id                          | string                    | Opcional             |  |
-list                         | string                    | Opcional (1)           |  Recuperar todas las categorias |
+list                         | string                    | Opcional (1)           |  Recuperar todas las categorías |
 
 ## PUT
-Cambiar productos asociados a la categoria
+Cambiar productos asociados a la categoría
 ```javascript
 const TOKEN = {token};
 
@@ -95,7 +95,7 @@ const SETTING =
     {
         id:'Listado principal', // string
         add:[],                 // array de string, Añadir a la lista actual
-        del:[]                  // array de string, Eliminar a la lista actual
+        del:[]                  // array de string, Eliminar de la lista actual
     }
 }
 
@@ -107,7 +107,7 @@ const REQUEST = async () =>
 }
 ```
 ## DELETE 
-Quitar una categoria
+Quitar una categoría
 ```javascript
 const TOKEN = {token};
 

@@ -1,10 +1,10 @@
 [Atras](/README.md) 
 
 # Métodos HTTP - Articulos
-A continuación se mostrará como usar las peticiones API REST.
+A continuación se mostrará como usar las peticiones API REST àra la obtención de información acerca de sus productos.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriorment.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
 
 ## POST
 Añadir un producto a la plataforma.
@@ -85,9 +85,8 @@ Parametro adicionales que se pueden usar.
 Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
 id                          | string                    | Obligatorio             | Identificador que se le añadió como referencia |
-category                    | string                    | Opcional ( product )    | Recuperar categorias asociandas al producto |
-info                        | string                    | Opcional ( tag )        | Si quiere recuperar etiquetas asociadas al producto, solo deberá 
-añadir como valor ***tag*** al atributo ***info*** |
+category                    | string                    | Opcional ( product )    | Recuperar categorías asociadas al producto |
+info                        | string                    | Opcional ( tag )        | Si quiere recuperar etiquetas asociadas al producto, solo deberá añadir como valor ***tag*** al atributo ***info*** |
 
 ## PUT
 Cambiar datos de un producto

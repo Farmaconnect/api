@@ -1,7 +1,8 @@
 [Atras](/README.md) 
 
 # Obtención de Token de acceso
-Para solicitar el Token de acceso deberá envía la **TOKEN_KEY** en la cabecera de la petición **GET**, está será proporcionada por el administador de la API.
+Para solicitar el Token de acceso deberá envíar la **TOKEN_KEY** en la cabecera de la petición **GET**.
+Esta será proporcionada por el administador de la API.
 
 ## Ejemplo en Javascript (ES6)
 ```javascript
@@ -29,7 +30,7 @@ const REQUEST_TOKEN = async () =>
 
 ```
 ## Respuesta
-Si la petición es correcta, esta recibirá la respuesta como el ejemplo siguiente.
+Si la petición es correcta, se recibirá una respuesta como el ejemplo siguiente:
 ```javascript
 
 {

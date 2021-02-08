@@ -1,10 +1,10 @@
 [Atras](/README.md) 
 
 # Métodos HTTP - Etiquetas
-A continuación se mostrará como usar las peticiones API REST.
+A continuación se mostrará como usar las peticiones API REST para la obtención de información acerca de sus etiquetas.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriorment.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
 
 ## POST
 Asignar una etiqueta a un producto o varios productos.
@@ -27,8 +27,8 @@ const SETTING =
     body : 
     {
         tag:'F751BB1C',
-        articles:['89449'], // Array de productos, se require validar cuantos productos permite el diseño
-        template:'NORMAL' // Opcional, por defecto siempre pondrá el primer diseño creado
+        articles:['89449'], // Array de productos, se require validar de antemano cuántos productos permite la plantilla
+        template:'NORMAL' // Opcional, por defecto siempre pondrá la primera plantilla creada
     }
 }
 
@@ -68,16 +68,16 @@ const REQUEST = async () =>
 
 ```
 
-Parametro adicionales que se pueden usar.
+Parámetros adicionales que se pueden usar.
 
-Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
+Parámetro de consulta       | Tipo de dato              |  Uso                    | Nota    |
 ------------------------    | ------------------------  |------------------------ |------------------------         |
 tag                         | string                    | Obligatorio             | Id de la etiqueta |
-template                    | int                       | Opcional                | Recuperar diseños asociados al modelo de etiqueta|
+template                    | int                       | Opcional                | Recuperar plantillas asociadas al modelo de etiqueta|
 flash                       | int (0,1)                 | Opcional                | Lanzar evento flash |
 
 ## PUT
-Cambiar el diseño, el producto o ambos
+Cambiar la plantilla, los productos asignados o ambos
 ```javascript
 const TOKEN = {token};
 
@@ -96,8 +96,8 @@ const SETTING =
     body : 
     {
         tag:'F751BB1C',
-        articles:['89449'], // Array de productos, se require validar cuantos productos permite el diseño
-        template:'NORMAL' // Opcional, por defecto siempre pondrá el primer diseño creado
+        articles:['89449'], // Array de productos, se require validar cuantos productos permite la plantilla
+        template:'NORMAL' // Opcional, por defecto siempre pondrá la plantilla creada
     }
 }
 

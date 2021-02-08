@@ -1,7 +1,7 @@
-[Atras](/README.md) 
+[Atrás](/README.md) 
 
 # Métodos HTTP - Information
-A continuación se mostrará como usar las peticiones API REST.
+A continuación se mostrará como usar las peticiones API REST para obtener la información general de su usuario.
 
 
 ## GET
