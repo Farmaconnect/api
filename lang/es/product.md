@@ -158,3 +158,8 @@ const REQUEST = async () =>
     return RESPONSE.json();
 }
 ```
+
+## Ejemplo en otros lenguajes
+Lenguage                    | Ejemplo                      |
+------------------------    | ------------------------  |
+Java             | [Ver archivo](/examples_post/java.jar)        | 
