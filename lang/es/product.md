@@ -29,7 +29,7 @@ const SETTING =
         id:'Ad-74174',
         attrs:
         {
-            description:'', // ( Obligatorio ) string
+            name:'',        // ( Obligatorio ) string
             pvp:0.00,       // float, decimal, int
             pvp_aux:0.00,   // float, decimal, int
             pvp_unit:0.00,  // float, decimal, int
@@ -110,7 +110,7 @@ const SETTING =
         id:'Ad-74174',
         attrs:
         {
-            name:'', // string
+            name:'',        // string
             pvp:0.00,       // float, decimal, int
             pvp_aux:0.00,   // float, decimal, int
             supplier: '',    // string
