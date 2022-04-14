@@ -12,7 +12,7 @@ Añadir un producto a una lista
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/list/';
+const URL = 'https://rest.farmaconnect.es/list';
 
 const SETTING =
 {
@@ -44,7 +44,7 @@ Recuperar información de una categoría
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/list/?id=Ad-74174';
+const URL = 'https://rest.farmaconnect.es/list?id=Ad-74174';
 
 const SETTING =
 {
