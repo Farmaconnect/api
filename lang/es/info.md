@@ -10,7 +10,7 @@ Recuperar información sobre el estado del uso de su API Rest.
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/info/';
+const URL = 'https://rest.farmaconnect.es/info';
 
 const SETTING =
 {

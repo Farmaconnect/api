@@ -7,7 +7,7 @@ Esta será proporcionada por el administador de la API.
 ## Ejemplo en Javascript (ES6)
 ```javascript
 const KEY = '111111-2222-3333-4444-5555555555';
-const URL = 'https://rest.farmaconnect.es/';
+const URL = 'https://rest.farmaconnect.es';
 
 const SETTING =
 {

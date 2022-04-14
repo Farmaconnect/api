@@ -81,7 +81,7 @@ Cambiar la plantilla, los productos asignados o ambos
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/tag/';
+const URL = 'https://rest.farmaconnect.es/tag';
 
 const SETTING =
 {
@@ -113,7 +113,7 @@ Quitar un asignación.
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/tag/';
+const URL = 'https://rest.farmaconnect.es/tag';
 
 const SETTING =
 {

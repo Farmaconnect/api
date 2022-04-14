@@ -1,18 +1,18 @@
 [Atras](/README.md) 
 
-# Métodos HTTP - Categoria de productos
-A continuación se mostrará como usar las peticiones API REST para la obtención de las categorías de productos.
+# Métodos HTTP - Lista de productos
+A continuación se mostrará como usar las peticiones API REST para la obtención de las lista de productos.
 
 ## Importante
 En todas las peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
 
 ## POST
-Añadir un producto a una categoria
+Añadir un producto a una lista
 
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/category/';
+const URL = 'https://rest.farmaconnect.es/list/';
 
 const SETTING =
 {
@@ -44,7 +44,7 @@ Recuperar información de una categoría
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/list?id=Ad-74174';
+const URL = 'https://rest.farmaconnect.es/list/?id=Ad-74174';
 
 const SETTING =
 {

@@ -57,7 +57,7 @@ Recuperar información de un producto
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/product/?id=Ad-74174';
+const URL = 'https://rest.farmaconnect.es/product?id=Ad-74174';
 
 const SETTING =
 {
@@ -93,7 +93,7 @@ Cambiar datos de un producto
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/product/';
+const URL = 'https://rest.farmaconnect.es/product';
 
 const SETTING =
 {
@@ -133,7 +133,7 @@ Quitar un producto
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/product/';
+const URL = 'https://rest.farmaconnect.es/product';
 
 const SETTING =
 {

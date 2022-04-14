@@ -44,7 +44,7 @@ Recuperar información de un almacén
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/storehouse/?id=Ad-74174';
+const URL = 'https://rest.farmaconnect.es/storehouse?id=Ad-74174';
 
 const SETTING =
 {
@@ -78,7 +78,7 @@ Cambiar etiquetas asociadas al almacén
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/storehouse/';
+const URL = 'https://rest.farmaconnect.es/storehouse';
 
 const SETTING =
 {
@@ -110,7 +110,7 @@ Quitar un almacén
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/storehouse/';
+const URL = 'https://rest.farmaconnect.es/storehouse';
 
 const SETTING =
 {
