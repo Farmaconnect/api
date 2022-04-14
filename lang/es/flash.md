@@ -52,3 +52,20 @@ color                       | string                    | Opcional              
 duration                    | int (5,10,20,30)          | Opcional                | Cuanto va a durar el proceso en  segundos|
 frequency                   | int (1,2,4)               | Opcional                | Cada cuanto se emitirá el flash |
 
+### Tipos de colores
+- WHITE ( Default )
+- RED,
+- GREEN
+- BLUE
+- CYAN
+- MAGENTA
+- YELLOW
+
+### Tipos de frecuencia de flash
+- 1 Cada segundo
+- 2 Cada 2 segundos ( Default )
+- 4 Cada 4 segundos
+
+### Tipos de duración
+- 20 segundos ( Default )
+- o cualquier valor inferior a 30 segundos
