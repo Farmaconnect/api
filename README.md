@@ -16,9 +16,10 @@ A continuación se mostrarán las funciones básicas para implementar la API de 
 Endpoints                    | Documentación                                                   |
 ------------------------     | ------------------------                                        |
 tag                          | [Métodos HTTP - Etiquetas](/lang/es/tag.md)                     |
-layout                       | [Métodos HTTP - Flash Led](/lang/es/layout.md)                  |
+layout                       | [Métodos HTTP - Diseño etiquetas](/lang/es/layout.md)                  |
 flash                         | [Métodos HTTP - Flash Led](/lang/es/flash.md)                  |
 product                      | [Métodos HTTP - Artículos](/lang/es/product.md)                 |
+list                        | [Métodos HTTP - Listado de productos ](/lang/es/list.md)  |
 category                     | [Métodos HTTP - Categoría de productos ](/lang/es/category.md)  |
 storehouse                   | [Métodos HTTP - Almacenes](/lang/es/storehouse.md)              |
 info                         | [Métodos HTTP - Información](/lang/es/info.md)                  |
