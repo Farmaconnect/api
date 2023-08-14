@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST àra la obtención de información acerca de sus productos.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## POST
 Añadir un producto a la plataforma.
@@ -26,21 +26,24 @@ const SETTING =
     }, 
     body : 
     {
-        id:'Ad-74174',
+        id: '74174',                     // ( Obligatorio ) string
         attrs:
         {
-            name:'',        // ( Obligatorio ) string
-            pvp:0.00,       // float, decimal, int
-            pvp_aux:0.00,   // float, decimal, int
-            pvp_unit:0.00,  // float, decimal, int
-            supplier: 0,    // int
-            stock:0,        // int
-            size:0,         // int
-            size_unit:'ml', // strin
-            url:'',         // string
-            ean:[]          // array de strings
+            name:'Product 74174',        // ( Obligatorio ) string
+            pvp: 5.00,                   // float, decimal, int
+            pvp_aux: 5.00,               // float, decimal, int
+            pvp_unit: 5.00,              // float, decimal, int
+            supplier: 0,                 // int
+            stock: 0,                    // int
+            size: 0,                     // int
+            size_unit: 'ml',             // string
+            supplier: 10,                // int
+            expiration: "2022-11-05",    // string
+            location: "B-38",            // string
+            url: '',                     // string
+            ean: ["8555888888811"]       // array de strings
         },
-        category: []        // array de string
+        category: []                     // array de string
     }
 }
 
@@ -82,10 +85,10 @@ const REQUEST = async () =>
 
 Parametro adicionales que se pueden usar.
 
-Parametro de consulta       | Tipo de dato              |  Uso                    | Nota    |
-------------------------    | ------------------------  |------------------------ |------------------------         |
-id                          | string                    | Obligatorio             | Identificador que se le añadió como referencia |
-category                    | string                    | Opcional ( product )    | Recuperar categorías asociadas al producto |
+Parametro de consulta       | Tipo de dato              |  Uso                    | Nota                                                                                                                |
+------------------------    | ------------------------  |------------------------ |------------------------                                                                                             |
+id                          | string                    | Obligatorio             | Identificador que se le añadió como referencia                                                                      |
+category                    | string                    | Opcional ( product )    | Recuperar categorías asociadas al producto                                                                          |
 info                        | string                    | Opcional ( tag )        | Si quiere recuperar etiquetas asociadas al producto, solo deberá añadir como valor ***tag*** al atributo ***info*** |
 
 ## PUT
@@ -107,17 +110,23 @@ const SETTING =
     }, 
     body : 
     {
-        id:'Ad-74174',
         attrs:
         {
-            name:'',        // string
-            pvp:0.00,       // float, decimal, int
-            pvp_aux:0.00,   // float, decimal, int
-            supplier: '',    // string
-            stock:0,        // int
-            url:'',         // string
+            name:'Product 74174',        // ( Obligatorio ) string
+            pvp: 10.00,                  // float, decimal, int
+            pvp_aux: 10.00,              // float, decimal, int
+            pvp_unit: 10.00,             // float, decimal, int
+            supplier: 0,                 // int
+            stock: 1,                    // int
+            size: 0,                     // int
+            size_unit: 'ml',             // string
+            supplier: 10,                // int
+            expiration: "2022-11-05",    // string
+            location: "A-37",            // string
+            url: '',                     // string
+            ean: ["8555888888822"]       // array de strings
         },
-        category: []        // array de string
+        category: []                     // array de string
     }
 }
 
@@ -133,7 +142,7 @@ Quitar un producto
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/product';
+const URL = 'https://rest.farmaconnect.es/product?id=Ad-74174';
 
 const SETTING =
 {
@@ -142,12 +151,7 @@ const SETTING =
     cache: 'no-cache',
     headers: 
     {
-      'Content-Type': 'application/json',
       'TOKEN':TOKEN
-    }, 
-    body : 
-    {
-        id:'Ad-74174'
     }
 }
 

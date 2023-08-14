@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST para la obtención de información acerca de sus etiquetas.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## POST
 Asignar una etiqueta a un producto o varios productos.
@@ -26,9 +26,9 @@ const SETTING =
     }, 
     body : 
     {
-        tag:'F751BB1C',
-        articles:['89449'], // Array de productos, se require validar de antemano cuántos productos permite la plantilla
-        template:'NORMAL' // Opcional, por defecto siempre pondrá la primera plantilla creada
+        tag: 'F751BB1C',
+        articles: ['89449'],                    // Array de productos, se require validar de antemano cuántos productos permite la plantilla
+        template: ''                            // Opcional, por defecto siempre pondrá la primera plantilla creada, dejar en blanco o listar layouts
     }
 }
 
@@ -96,8 +96,8 @@ const SETTING =
     body : 
     {
         tag:'F751BB1C',
-        articles:['89449'], // Array de productos, se require validar cuantos productos permite la plantilla
-        template:'NORMAL' // Opcional, por defecto siempre pondrá la plantilla creada
+        articles: ['89449'],                    // Array de productos, se require validar cuantos productos permite la plantilla
+        template: ''                            // Opcional, por defecto siempre pondrá la primera plantilla creada, dejar en blanco o listar layouts
     }
 }
 
@@ -113,7 +113,7 @@ Quitar un asignación.
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/tag';
+const URL = 'https://rest.farmaconnect.es/tag?tag=F751BB1C';
 
 const SETTING =
 {
@@ -122,12 +122,7 @@ const SETTING =
     cache: 'no-cache',
     headers: 
     {
-      'Content-Type': 'application/json',
       'TOKEN':TOKEN
-    }, 
-    body : 
-    {
-        tag:'F751BB1C'
     }
 }
 

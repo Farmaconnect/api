@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST para lanzar el evento de layout.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## GET
 Realizar una consulta de los layout disponibles, con la posibilidad de validar si la etiqueta tiene un layout

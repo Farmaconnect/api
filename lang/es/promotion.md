@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST para la obtención de información acerca de sus promociones.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## POST
 Añadir una promoción a la plataforma.
@@ -27,7 +27,7 @@ const SETTING =
     body : 
     {
         name: "Oferta 20%",             // ( Obligatorio ) string
-        target: "32",                   // Id de producto
+        target: "32",                   // ( Obligatorio ) Id de [Artículo / Lista / Familia / Categoría / Etiqueta]
         promotion_type: 1,              // Tipo promoción (ver abajo)
         type_calendar: 1,               // Tipo calendario (ver abajo)
         dates: [                        // Listado de fechas (ver tipo de calendario y ejemplos)
@@ -98,7 +98,7 @@ const SETTING =
     {
         id: 40,                         // ( Obligatorio ) id de promoción
         name: "Oferta 20%",             // ( Obligatorio ) string
-        target: "32",                   // Id de producto
+        target: "32",                   // ( Obligatorio ) Id de [Artículo / Lista / Familia / Categoría / Etiqueta]
         promotion_type: 1,              // Tipo promoción (ver abajo)
         type_calendar: 1,               // Tipo calendario (ver abajo)
         dates: [                        // Listado de fechas (ver tipo de calendario y ejemplos)
@@ -124,7 +124,7 @@ Quitar una promoción
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/promotion';
+const URL = 'https://rest.farmaconnect.es/promotion?id=42';
 
 const SETTING =
 {
@@ -133,12 +133,7 @@ const SETTING =
     cache: 'no-cache',
     headers: 
     {
-      'Content-Type': 'application/json',
       'TOKEN':TOKEN
-    }, 
-    body : 
-    {
-        id: 39                      // ( Obligatorio ) id de promoción
     }
 }
 
@@ -164,7 +159,7 @@ id                          | Descripción                  |
 2                           | Lista                        |
 3                           | Familia                      |
 4                           | Categoría                    |
-5                           | Etiquetas                    |
+5                           | Etiqueta                    |
 
 ### Tipos de promociones "promotion_type"
 id                          | Descripción                  |

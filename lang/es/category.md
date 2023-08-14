@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST para la obtención de las categorías de productos.
 
 ## Importante
-En todas las peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas las peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## POST
 Añadir un producto a una categoria
@@ -26,7 +26,7 @@ const SETTING =
     }, 
     body : 
     {
-        id:'Listado principal', // string
+        id: 'Principal category', // string
         articles: []            // array de string
     }
 }
@@ -44,7 +44,7 @@ Recuperar información de una categoría
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/list?id=Ad-74174';
+const URL = 'https://rest.farmaconnect.es/category?id=Ad-74174';
 
 const SETTING =
 {
@@ -79,7 +79,7 @@ Cambiar productos asociados a la categoría
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/list';
+const URL = 'https://rest.farmaconnect.es/category';
 
 const SETTING =
 {
@@ -93,9 +93,9 @@ const SETTING =
     }, 
     body : 
     {
-        id:'Listado principal', // string
-        add:[],                 // array de string, Añadir a la lista actual
-        del:[]                  // array de string, Eliminar de la lista actual
+        id: 'Principal category', // string
+        add: [],                 // array de string, Añadir a la lista actual
+        del: []                  // array de string, Eliminar de la lista actual
     }
 }
 
@@ -111,7 +111,7 @@ Quitar una categoría
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/list';
+const URL = 'https://rest.farmaconnect.es/category?id=Principal category';
 
 const SETTING =
 {
@@ -120,12 +120,7 @@ const SETTING =
     cache: 'no-cache',
     headers: 
     {
-      'Content-Type': 'application/json',
       'TOKEN':TOKEN
-    }, 
-    body : 
-    {
-        id:'Listado principal'
     }
 }
 

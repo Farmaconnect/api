@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST para la obtención de información acerca de sus almacenes.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## POST
 Añadir una etiqueta a un almacén
@@ -110,7 +110,7 @@ Quitar un almacén
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/storehouse';
+const URL = 'https://rest.farmaconnect.es/storehouse?id=Listado principal';
 
 const SETTING =
 {
@@ -119,12 +119,7 @@ const SETTING =
     cache: 'no-cache',
     headers: 
     {
-      'Content-Type': 'application/json',
       'TOKEN':TOKEN
-    }, 
-    body : 
-    {
-        id:'Listado principal'
     }
 }
 

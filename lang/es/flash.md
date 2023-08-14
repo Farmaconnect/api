@@ -4,7 +4,7 @@
 A continuación se mostrará como usar las peticiones API REST para lanzar el evento de flash.
 
 ## Importante
-En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solició anteriormente.
+En todas la peticiones se tiene que enviar en el encabezado ***TOKEN***, que se solicitó anteriormente.
 
 ## POST
 Realizar un flasheo a uno o varias etiquetas a la vez
