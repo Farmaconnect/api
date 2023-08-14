@@ -45,7 +45,7 @@ Recuperar información de las etiquetas
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/tag/?tag=F751BB1C';
+const URL = 'https://rest.farmaconnect.es/tag/?id=F751BB1C';
 
 const SETTING =
 {
@@ -113,7 +113,7 @@ Quitar un asignación.
 ```javascript
 const TOKEN = {token};
 
-const URL = 'https://rest.farmaconnect.es/tag?tag=F751BB1C';
+const URL = 'https://rest.farmaconnect.es/tag?id=F751BB1C';
 
 const SETTING =
 {
